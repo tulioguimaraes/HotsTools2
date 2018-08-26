@@ -1,0 +1,254 @@
+<html>
+    <form name="Q1" method="POST" action="Lista1.php" >
+        <table>
+            <tr>
+                <td>Q1: Fazer um algoritmo para calcular a soma entre dois números.  </td>
+            </tr>
+            <tr>
+                <td><input type="text" name="Q1N1" placeholder="Numero 1"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="Q1N2" placeholder="Numero 2"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="ENVIAR"></td><td>Resultado: <?php
+                                                                             //   if(isset($_POST["Q1N1"]) != "" and  isset($_POST["Q1N2"]) != "" )
+                                                                           //     {
+                                                                                    $Q1N1 = ($_POST["Q1N1"]);
+                                                                                    $Q1N2 = ($_POST["Q1N2"]);
+                                                                                    echo $Q1N1 + $Q1N2;        
+                                                                          //      }
+                                                                            ?>
+                                                                                 <td>
+            </tr>
+        </table>
+    </form>
+    <form name="Q2" method="POST" action="Lista1.php" >
+        <table>
+            <tr>
+                <td>Q2: Fazer um algoritmo para calcular a soma entre dois números e multiplicar o resultado pelo primeiro. </td>
+            </tr>
+            <tr>
+                <td><input type="text" name="Q2N1" placeholder="Numero 1"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="Q2N2" placeholder="Numero 2"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="ENVIAR"></td><td>Resultado: <?php
+                                                                                if(isset($_POST["Q2N1"]) != "" and isset($_POST["Q2N2"]) != "")
+                                                                                {
+                                                                                    $Q2N1 = ($_POST["Q2N1"]);
+                                                                                    $Q2N2 = ($_POST["Q2N2"]);
+                                                                                    echo ($Q2N1 + $Q2N2) * $Q2N1;        
+                                                                                }
+                                                                            ?>
+                                                                                 <td>
+            </tr>
+        </table>
+    </form>
+    <form name="Q3" method="POST" action="Lista1.php" >
+        <table>
+            <tr>
+                <td>Q3: Fazer um algoritmo para receber um valor em dólar e converter esse valor em real. </td>
+            </tr>
+            <tr>
+                <td><input type="text" name="Q3N1" placeholder="Valor em Real"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="ENVIAR"></td><td>Resultado: <?php
+                                                                                if(isset($_POST["Q3N1"]) != "")
+                                                                                {
+                                                                                    $Q3N1 = ($_POST["Q3N1"]);
+                                                                                    echo $Q3N1 / 3.50;        
+                                                                                }
+                                                                            ?>
+                                                                                 <td>
+            </tr>
+        </table>
+    </form>
+    <form name="Q4" method="POST" action="Lista1.php" >
+        <table>
+            <tr>
+                <td>Q4: Fazer um algoritmo para calcular a média final (média aritmética) de um aluno, considerando a realização de quatro avaliações. </td>
+            </tr>
+            <tr>
+                <td><input type="text" name="Q4N1" placeholder="Avaliação 1"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="Q4N2" placeholder="Avaliação 2"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="Q4N3" placeholder="Avaliação 3"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="Q4N4" placeholder="Avaliação 4"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="ENVIAR"></td><td>Resultado: <?php
+                                                                                if(isset($_POST["Q4N1"]) != "" and isset($_POST["Q4N2"]) != "" and isset($_POST["Q4N3"]) != "" and isset($_POST["Q4N4"]) != "")
+                                                                                {
+                                                                                    $Q4N1 = ($_POST["Q4N1"]);
+                                                                                    $Q4N2 = ($_POST["Q4N2"]);
+                                                                                    $Q4N3 = ($_POST["Q4N3"]);
+                                                                                    $Q4N4 = ($_POST["Q4N4"]);
+                                                                                    echo ($Q4N1 + $Q4N2 + $Q4N3 + $Q4N4) / 4;        
+                                                                                }
+                                                                            ?>
+                                                                                 <td>
+            </tr>
+        </table>
+    </form>
+    <form name="Q5" method="POST" action="Lista1.php" >
+        <table>
+            <tr>
+                <td>Q5: Fazer um algoritmo para calcular a área de um quadrado. </td>
+            </tr>
+            <tr>
+                <td><input type="text" name="Q5N1" placeholder="Comprimento do lado"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="ENVIAR"></td><td>Resultado: <?php
+                                                                                if(isset($_POST["Q5N1"]) != "")
+                                                                                {
+                                                                                    $Q5N1 = ($_POST["Q5N1"]);
+                                                                                    echo bcpow($Q5N1, 2);        
+                                                                                }
+                                                                            ?>
+                                                                                 <td>
+            </tr>
+        </table>
+    </form>
+        <form name="Q6" method="POST" action="Lista1.php" >
+        <table>
+            <tr>
+                <td>Q6: Fazer um algoritmo para calcular a soma, a diferença, o produto e a divisão de dois números inteiros. </td>
+            </tr>
+            <tr>
+                <td><input type="text" name="Q6N1" placeholder="Numero 1"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="Q6N2" placeholder="Numero 2"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="ENVIAR"></td><td>Resultado: <?php
+                                                                                if(isset($_POST["Q6N1"]) != "" and isset($_POST["Q6N2"]) != "")
+                                                                                {
+                                                                                    $Q6N1 = ($_POST["Q6N1"]);
+                                                                                    $Q6N2 = ($_POST["Q6N2"]);
+                                                                                    echo "soma: ", $Q6N1 + $Q6N2; echo " subtracao: ", $Q6N1 - $Q6N2; echo " divisão: ", ($Q6N1 / $Q6N2); echo " multiplicação: ", ($Q6N1 * $Q6N2);       
+                                                                                }
+                                                                            ?>
+                                                                                 <td>
+            </tr>
+        </table>
+    </form>
+    <form name="Q7" method="POST" action="Lista1.php" >
+        <table>
+            <tr>
+                <td>Q7: Fazer um algoritmo que leia um número inteiro e exiba o seu antecessor e o seu sucessor. </td>
+            </tr>
+            <tr>
+                <td><input type="text" name="Q7N1" placeholder="Numero"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="ENVIAR"></td><td>Resultado: <?php
+                                                                                if(isset($_POST["Q7N1"]) != "")
+                                                                                {
+                                                                                    $Q7N1 = ($_POST["Q7N1"]);
+                                                                                    echo "antecessor ", $Q7N1 - 1; echo " sucessor ", $Q7N1 + 1;
+                                                                                }
+                                                                            ?>
+                                                                                 <td>
+            </tr>
+        </table>
+    </form>
+        <form name="Q8" method="POST" action="Lista1.php" >
+        <table>
+            <tr>
+                <td>Q8: Faça um algoritmo que leia dois valores inteiros representando, respectivamente um valor de hora e um de minutos. Calcule quantos minutos se passaram desde o início do dia. </td>
+            </tr>
+            <tr>
+                <td><input type="text" name="Q8N1" placeholder="Hora"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="Q8N2" placeholder="Minutos"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="ENVIAR"></td><td>Resultado: <?php
+                                                                                if(isset($_POST["Q8N1"]) != "" and isset($_POST["Q8N2"]) != "")
+                                                                                {
+                                                                                    $Q8N1 = ($_POST["Q8N1"]);
+                                                                                    $Q8N2 = ($_POST["Q8N2"]);
+                                                                                    $tempoMin = ($Q8N1 * 60) + $Q8N2;
+                                                                                    echo $tempoMin;
+                                                                                }
+                                                                            ?>
+                                                                                 <td>
+            </tr>
+        </table>
+    </form>
+    </form>
+        <form name="Q9" method="POST" action="Lista1.php" >
+        <table>
+            <tr>
+                <td>Q9: Calcular o valor total de um determinado pagamento a ser realizado, incluindo a taxa de juros. </td>
+            </tr>
+            <tr>
+                <td><input type="text" name="Q9N1" placeholder="Valor do pagamento"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="Q9N2" placeholder="Taxa de juros"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="ENVIAR"></td><td>Resultado: <?php
+                                                                                if(isset($_POST["Q9N1"]) != "" and isset($_POST["Q9N2"]) != "")
+                                                                                {
+                                                                                    $Q9N1 = ($_POST["Q9N1"]);
+                                                                                    $Q9N2 = ($_POST["Q9N2"]);
+                                                                                    $juros = $Q9N1 * ($Q9N2 / 100);
+                                                                                    echo $Q9N1 + $juros;
+                                                                                }
+                                                                            ?>
+                                                                                 <td>
+            </tr>
+        </table>
+    </form>
+    </form>
+        <form name="Q10" method="POST" action="Lista1.php" >
+        <table>
+            <tr>
+                <td>Q10: Faça um algoritmo que leia o horário de entrada (hora e minuto) e o horário de saída (hora e minuto) de um empregado e imprima quanto tempo, no formato HORA:MINUTO o empregado ficou na empresa. </td>
+            </tr>
+            <tr>
+                <td><input type="text" name="Q10N1" placeholder="Hora de entrada"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="Q10N2" placeholder="Minuto de entrada"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="Q10N3" placeholder="Hora de saida"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="Q10N4" placeholder="Minuto de saida"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="ENVIAR"></td><td>Resultado: <?php
+                                                                                if(isset($_POST["Q10N1"]) != "" and isset($_POST["Q10N2"]) != "")
+                                                                                {
+                                                                                    $Q10N1 = ($_POST["Q10N1"]);
+                                                                                    $Q10N2 = ($_POST["Q10N2"]);
+                                                                                    $Q10N3 = ($_POST["Q10N3"]);
+                                                                                    $Q10N4 = ($_POST["Q10N4"]);
+                                                                                    $hora  = $Q10N3 - $Q10N1;
+                                                                                    $minutoE = ($hora * 60) + $Q10N2;
+                                                                                    $minutoS = ($hora * 60) + $Q10N4;
+                                                                                    $minutoF = ($minutoS - $minutoE);
+                                                                                    echo " Hora: ", $hora; echo " Minuto: ", $minutoF;
+                                                                                }
+                                                                            ?>
+                                                                                 <td>
+            </tr>
+        </table>
+    </form>
+</html>
